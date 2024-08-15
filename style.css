@@ -205,7 +205,6 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 #services_container {
@@ -585,7 +584,7 @@ footer {
 .social_icons li {
   list-style: none;
 }
-.footer_info{
+.footer_info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -710,9 +709,13 @@ footer {
     padding: 1em;
   }
   #home section {
+    width: 98%;
     flex-direction: column;
   }
   #home .container {
+    width: 100%;
+  }
+  #about .container {
     width: 100%;
   }
   #footer {
