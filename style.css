@@ -29,12 +29,29 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   margin: 0;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+
+header,
+#home,
+#about,
+#services,
+#portfolio,
+#contact,
+footer {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 header {
   width: 100%;
+  /* min-width: 520px; */
   height: 5.3em;
   position: fixed;
   top: 0;
+  background-color: var(--primary_color);
   z-index: 10;
 }
 nav {
@@ -42,7 +59,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--primary_color);
 }
 .navbar {
   display: flex;
@@ -189,6 +205,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 #services_container {
@@ -204,6 +221,8 @@ nav a {
 #services h1 {
   font-size: 4em;
   width: 3.9em;
+  line-height: 1em;
+  margin-bottom: 0.4em;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -566,11 +585,21 @@ footer {
 .social_icons li {
   list-style: none;
 }
-.page_info a {
+.footer_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.page_info a,
+.footer_info a {
   color: var(--bg_color);
   text-decoration: none;
 }
-.page_info a:hover {
+.page_info a:hover,
+.footer_information li:hover,
+.footer_info:hover a {
+  cursor: pointer;
   color: var(--secondary_color);
 }
 .footer_logo {
