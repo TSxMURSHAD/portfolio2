@@ -754,9 +754,13 @@ footer {
     padding: 1em;
   }
   #home section {
+    width: 98%;
     flex-direction: column;
   }
   #home .container {
+    width: 100%;
+  }
+  #about .container {
     width: 100%;
   }
   #footer {
